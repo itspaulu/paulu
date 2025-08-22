@@ -36,14 +36,30 @@
     }
 
     #bg-gif {
-      position: fixed;
-      top: 40%;
-      left: 50%;
-      width: auto;
-      height: auto;
-      transform: translate(-50%, -50%);
-      z-index: -1;
-    }
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 60vw;       /* largura relativa à viewport */
+  max-width: 400px;  /* limita o tamanho máximo em desktops */
+  height: auto;      /* mantém proporção */
+  transform: translate(-50%, -50%);
+  z-index: -1;
+}
+
+@media (max-width: 720px) {
+  #bg-gif {
+    width: 80vw;      /* aumenta a cobertura em telas menores */
+    max-width: none;  /* remove limite para mobile */
+    top: 45%;         /* ajusta posição vertical se necessário */
+  }
+}
+
+@media (max-width: 480px) {
+  #bg-gif {
+    width: 90vw;      /* quase toda a largura da tela */
+    top: 40%;
+  }
+}
 
     .page { min-height: 100dvh; display: grid; grid-template-rows: auto 1fr auto; }
 
