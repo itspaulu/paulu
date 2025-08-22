@@ -53,7 +53,7 @@ position: fixed;
     .brand {
       font-family: 'Oceanside', serif;
       font-size: clamp(28px, 3.2vw, 40px);
-      font-style: italic;
+      font-style: regular;
       color: var(--accent);
     }
 
@@ -61,7 +61,7 @@ position: fixed;
 
     nav a {
       font-family: 'Oceanside', serif;
-      font-style: italic;
+      font-style: regular;
       font-size: clamp(16px, 1.6vw, 22px);
       text-decoration: none;
       color: var(--accent);
@@ -79,13 +79,13 @@ position: fixed;
 
     .headline {
       font-family: 'Oceanside', serif;
-      font-style: italic;
+      font-style: regular;
       font-size: clamp(20px, 2.2vw, 32px);
     }
 
     form { display: grid; grid-template-columns: 1fr 1fr auto; gap: 20px; align-items: end; }
 
-    label { font-family: 'Oceanside', serif; font-style: italic; font-size: 16px; opacity: .9; }
+    label { font-family: 'Oceanside', serif; font-style: regular; font-size: 16px; opacity: .9; }
 
     .field { display: grid; gap: 8px; }
 
@@ -95,7 +95,7 @@ position: fixed;
 
     button[type="submit"] {
       height: 44px; padding: 0 28px; border: none; border-radius: 2px; background: var(--olive-dark); color: var(--white);
-      font-family: 'Oceanside', serif; font-style: italic; font-size: 18px; cursor: pointer; transition: transform .04s ease, filter .2s ease;
+      font-family: 'Oceanside', serif; font-style: regular; font-size: 18px; cursor: pointer; transition: transform .04s ease, filter .2s ease;
     }
 
     button[type="submit"]:active { transform: translateY(1px); }
@@ -112,7 +112,6 @@ position: fixed;
 </head>
 <body>
 
-<!-- Vídeo em looping de fundo -->
 <img src="Cabeçalho.gif" id="bg-gif" alt="fundo animado" />
     
   <div class="page">
@@ -145,7 +144,7 @@ position: fixed;
     </div>
   </footer>
 
-  <div id="toast" class="toast">Inscrição enviada! (demonstração)</div>
+  <div id="toast" class="toast">Inscrição enviada!</div>
 
   <script>
     const form = document.getElementById('form-news');
