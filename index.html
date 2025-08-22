@@ -97,6 +97,53 @@
       font-size: 14px;
       opacity: 0.9;
     }
+
+/* Header: entra do topo */
+.fade-in-down {
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: fadeInDown 1s forwards;
+  animation-delay: 0.2s;
+}
+
+@keyframes fadeInDown {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Main: entra da esquerda */
+.fade-in-left {
+  opacity: 0;
+  transform: translateX(-20px);
+  animation: fadeInLeft 1s forwards;
+  animation-delay: 0.5s;
+}
+
+@keyframes fadeInLeft {
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Footer: entra de baixo */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  animation-delay: 0.8s;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+    
   </style>
 </head>
 <body>
@@ -120,5 +167,14 @@
   </footer>
 </div>
 
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    document.querySelector('header').classList.add('fade-in-down');
+    document.querySelector('main').classList.add('fade-in-left');
+    document.querySelector('footer').classList.add('fade-in-up');
+  });
+</script>
+
+  
 </body>
 </html>
