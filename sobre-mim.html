@@ -102,9 +102,22 @@
   </main>
 </div>
 
-  <footer>
-    &copy; 2025 paulu. Todos os direitos reservados.
-  </footer>
+<footer>
+  <div class="newsletter">
+    <h2>receba novidades no seu email</h2>
+    <form action="https://formspree.io/f/SEU-ENDPOINT" method="POST" class="newsletter-form">
+      <div class="form-group">
+        <label for="nome">nome</label>
+        <input type="text" id="nome" name="nome" required>
+      </div>
+      <div class="form-group">
+        <label for="email">email</label>
+        <input type="email" id="email" name="email" required>
+      </div>
+      <button type="submit">inscrever</button>
+    </form>
+  </div>
+</footer>
 
 <script>
   const form = document.getElementById('form-news');
